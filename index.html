@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Grid Intro</title>
+    <style>
+        body {
+            background-color: #eee;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .container {
+            background-color: blanchedalmond;
+            margin: 10px auto 50px;
+            display: grid;
+            width: 340px;
+            height: 210px;
+            grid-template-columns: repeat(3, 100px);
+            grid-template-rows: repeat(2, 100px);
+            grid-gap: 10px 20px;
+
+
+        }
+        
+
+        .items {
+            background-color: orange;
+        }
+        .items:hover{
+            background-color: red;
+        }
+
+        h1, h3{
+            text-decoration: underline;
+            text-align: center;
+        }
+       
+
+        ul {
+            list-style-image: url('li.png');
+        }
+
+        ul li {
+            padding: 5px;
+            font-size: 25px;
+        }
+        .subclass{
+            list-style-image: url('li1.png');
+        }
+        ol{
+            font-size: 25px;
+            font-style: italic;
+            
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS Grid intro:</h1>
+    <ul >
+        <li>Grid is used for two-dimensional layouts (both rows and columns).</li>
+        <li>CSS Grid is the preferred option rather than float layout.</li>
+        <li>Why it's fast and clean:</li>
+        <ul class="subclass">
+            <li> Minimal CSS: Just a few lines to achieve a fully responsive layout.</li>
+            <li>Flexibility: The grid automatically adjusts to the screen size.</li>
+            <li> Efficiency: No media queries are needed for responsiveness, making the code cleaner and more
+                maintainable.</li>
+        </ul>
+        <li> CSS Grid allows you to create flexible, responsive layouts without relying on heavy CSS frameworks like Bootstrap or Foundation. </li>
+    </ul>
+<h3>Grid Container</h3>
+    <div class="container">
+        <div class="items items1"></div>
+        <div class="items items2"></div>
+        <div class="items items3"></div>
+        <div class="items items4"></div>
+        <div class="items items5"></div>
+        <div class="items items6"></div>
+    </div>
+    <ol>
+        <li>Grid Container</li>
+        <ul>
+            <li>Definition: The element that holds the grid items.</li>
+            <li>Usage: To define an element as a grid container, apply display: grid; or display: inline-grid;.</li>
+        </ul>
+        <li>Grid Items</li>
+        <ul>
+            <li>Definition: The direct children of a grid container are automatically treated as grid items.</li>
+            <li>Placement: These items are positioned within the grid based on the rules you define.</li>
+        </ul>
+        <li>Grid Template Columns/Rows</li>
+        <ul>
+            <li>Definition: These properties define the number of columns and rows, as well as their sizes.</li>
+        <li>Usage: You can define them in fixed units (px, em, etc.), percentages, or even fractions (fr).</li>
+    </ul>
+    <li>Grid Gaps</li>
+    <ul>
+        <li>Definition: The space between grid items</li>
+        <li>Usage: grid-gap, grid-row-gap, and grid-column-gap are used to specify the gaps between rows and columns.</li>
+    </ul>
+    <li>Grid Lines</li>
+    <ul>
+        <li>Definition: The lines that separate the rows and columns in the grid.</li>
+        <li>Usage: You can refer to these grid lines when positioning items.</li>
+    </ul>
+
+    </ol>
+ 
+
+
+
+
+</body>
+
+</html>
